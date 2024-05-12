@@ -14,6 +14,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #ECEFF4; /* text color overall */
+    position: relative;
 }
 
 .header {
@@ -75,25 +76,42 @@ body {
 }
 
 .toggle-mode {
-    background-color: #666;
-    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0;
     cursor: pointer;
 }
 
-.toggle-mode:hover {
-    background-color: #888;
+.toggle-mode i {
+    font-size: 20px;
+    color: #ECEFF4;
+}
+
+.light-mode .toggle-mode i {
+    font-size: 20px;
+    color: #333;
 }
 
 .light-mode {
-    background-color: #f9f9f9;
+    background-color: #ECEFF4;
 }
 
 .light-mode .container {
-    background-color: #fff;
+    background-color: #E5E9F0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #3B4252;
+}
+
+.light-mode .social-box {
+    background-color: #E5E9F0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .social-box i {
+    color: #3B4252;
 }
 
 /* Add responsiveness */

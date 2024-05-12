@@ -8,6 +8,9 @@
 </head>
 <body>
     <div class="container">
+        <button class="toggle-mode" onclick="toggleMode()">
+            <i class="fa-solid fa-circle-half-stroke" id="mode-icon"></i>
+        </button>
         <div class="header">
             <img src="image.png" alt="Profile Picture" class="profile-pic">
             <h1>Avishek Dutta</h1>
@@ -58,14 +61,7 @@
         <!-- <button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button> -->
     </div>
 
-    <script>
-        let isDarkMode = true;
-
-        function toggleMode() {
-            isDarkMode = !isDarkMode;
-            document.body.classList.toggle('light-mode', !isDarkMode);
-        }
-    </script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/31103ed6e9.js" crossorigin="anonymous"></script>
 </body>
 </html>
