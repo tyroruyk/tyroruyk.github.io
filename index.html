@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TyroRUYK's Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <div class="header">
+            <img src="image.png" alt="Profile Picture" class="profile-pic">
+            <h1>Avishek Dutta</h1>
+        </div>
+        <div class="bio">
+            <p>Student and self-taught algorithm designer.</p>
+        </div>
+        <div class="contact">
+            <h2 class="contact-links">Get in touch</h2>
+            <ul>
+                <!-- <li>
+                    <a href="https://www.example.com" target="_blank">
+                        <div class="social-box">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="https://twitter.com/tyroruyk" target="_blank">
+                        <div class="social-box">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:avishek_dutta@icloud.com">
+                        <div class="social-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tyroruyk/" target="_blank">
+                        <div class="social-box">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/tyroruyk/" target="_blank">
+                        <div class="social-box">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button> -->
+    </div>
+
+    <script>
+        let isDarkMode = true;
+
+        function toggleMode() {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('light-mode', !isDarkMode);
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/31103ed6e9.js" crossorigin="anonymous"></script>
 </body>
 </html>
