@@ -1,80 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Last updated message at the bottom -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avishek Dutta</title>
-    
-    <meta name="title" content="Avishek Dutta">
-    <meta name="description" content="Student and self-taught algorithm designer.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://avishek.me/">
-    <meta property="og:title" content="Avishek Dutta">
-    <meta property="og:description" content="Student and self-taught algorithm designer.">
-    <meta property="og:image" content="https://avishek.me/self.jpeg">
-    <meta property="twitter:url" content="http://avishek.me/">
-    <meta property="twitter:title" content="Avishek Dutta">
-    <meta property="twitter:description" content="Student and self-taught algorithm designer.">
-    <meta property="twitter:image" content="https://avishek.me/self.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            font-size: 11pt;
+        }
+
+        .container {
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            font-size: 11.5pt;
+        }
+
+        .header p {
+            margin: 5px 0;
+        }
+
+        .profile {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        h2 {
+            color: #2b5173;
+            font-size: 14pt;
+            margin: 25px 0 15px 0;
+            font-weight: normal;
+            border-bottom: 1px solid #b3b3b3;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item p {
+            margin: 5px 0;
+        }
+
+        .project-url {
+            margin-top: 5px;
+        }
+
+        .project-url a {
+            color: #2b5173;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-url a:hover {
+            text-decoration: underline;
+        }
+
+        .institution {
+            font-weight: bold;
+        }
+
+        .date {
+            color: #555;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #2b5173;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 12pt;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #1d3a50;
+        }
+
+        .grade {
+            font-style: italic;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .download-btn {
+                display: none;
+            }
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #2b5173;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #555;
+            font-size: 10pt;
+            margin-top: 20px;
+            border-top: 1px solid #b3b3b3;
+            padding-top: 20px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 11pt;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #2b5173;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <button class="toggle-mode" onclick="toggleMode()">
-            <i class="fa-solid fa-circle-half-stroke" id="mode-icon"></i>
-        </button>
         <div class="header">
-            <img src="self.jpeg" alt="Profile Picture" class="profile-pic">
-            <h1>Avishek Dutta</h1>
+            <strong>
+                <p>Avishek Dutta</p>
+                <p>Feni Sadar, Feni, Chittagong, Bangladesh - 3900</p>
+                <p>avishek@neunelabs.com</p>
+                <p>+880 1791-396000</p>
+            </strong>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/duttavishek" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/tyroruyk" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://twitter.com/tyroruyk" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.facebook.com/tyroruyk" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
         </div>
-        <div class="bio">
-            <p>Student and self-taught algorithm designer.</p>
+
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#volunteering">Volunteering</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+
+        <div class="profile">
+            <p>My academic journey has been marked by a commitment to excellence and a drive to push the boundaries of what is possible with technology. I have developed a range of projects that demonstrate my ability to apply theoretical knowledge to practical problems, particularly in the areas of natural language processing and system optimization. I am eager to continue my education and research in a challenging and dynamic environment where I can contribute to the advancement of technology and innovation.</p>
         </div>
-        <div class="contact">
-            <h2 class="contact-links">Get in touch</h2>
+
+        <h2 id="education">Education</h2>
+
+        <div class="item">
+            <p class="institution">Higher Secondary, Cantonment College, Cumilla Cantonment</p>
+            <p class="date">(2023 - 2024)</p>
+            <p class="grade">Grade: GPA 5.00/5.00 (Science)</p>
+        </div>
+
+        <div class="item">
+            <p class="institution">Secondary, Feni Government Pilot High School, Feni</p>
+            <p class="date">(2017 - 2022)</p>
+            <p class="grade">Grade: GPA 5.00/5.00 (Science)</p>
+        </div>
+
+        <h2 id="projects">Projects</h2>
+
+        <div class="item">
+            <p class="institution">KothonAI: Bengali Generative AI Tool</p>
+            <p>Developed a novel architecture for Bengali language processing that addresses challenges specific to morphologically rich languages. It's now regularly used by the general students of Bangladesh.</p>
+            <p class="project-url"><a href="https://ai.pathgriho.com/" target="_blank">View Project</a></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">RoktoJog - E2E Blood Donation System</p>
+            <p>Developed an end-to-end blood donation system to streamline the process of blood donation and management. This system includes features for donor registration, blood inventory management, and scheduling of donation appointments.</p>
+            <p class="project-url"><a href="http://roktojog.org/" target="_blank">View Project</a>
+            </p>
+        </div>
+
+        <div class="item">
+            <p class="institution">XCalc - A Simple CLI Calculator</p>
+            <p>Created a simple command-line interface calculator using Rust and Bash. This tool supports basic arithmetic operations and serves as a practical example of CLI application development.</p>
+            <p class="project-url"><a href="https://github.com/tyroruyk/xcalc" target="_blank">View Project</a></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">Basic System Kernel (BSK)</p>
+            <p>Developed a basic system kernel using Assembly and C to demonstrate fundamental operating system concepts. This project provides insights into low-level programming and system architecture.</p>
+            <p class="project-url"><a href="https://gitlab.com/tyroruyk/bsk" target="_blank">View Project</a></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">Ufetch - A System Fetch Tool</p>
+            <p>Created a system fetch tool using Rust and Bash to display system information. This tool provides detailed information about the system's hardware and software configuration in a user-friendly format.
+            </p>
+            <p class="project-url"><a href="https://github.com/tyroruyk/ufetch" target="_blank">View Project</a></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">BDIX Server Checker</p>
+            <p>Developed a server checker tool using Python and JavaScript to monitor BDIX servers. This tool helps in ensuring the availability and performance of BDIX servers by providing real-time status updates and alerts.</p>
+            <p class="project-url"><a href="https://github.com/tyroruyk/bdix" target="_blank">View Project</a></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">PAPT - Post APT Tool</p>
+            <p>Created a post-APT tool using Bash to automate post-installation tasks. This tool simplifies the process
+                of setting up a new system by automating common configuration and installation steps.</p>
+            <p class="project-url"><a href="https://github.com/tyroruyk/papt" target="_blank">View Project</a></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">Triplex - A Simple CLI Puzzle Game</p>
+            <p>Developed a simple command-line interface puzzle game using C++. This game challenges players with various puzzles and serves as an example of game development using C++.</p>
+            <p class="project-url"><a href="https://github.com/tyroruyk/triplex" target="_blank">View Project</a>
+            </p>
+        </div>
+
+        <div class="item">
+            <p class="institution">DeWin - Windows Debloating Utility</p>
+            <p>Created a Windows debloating utility using PowerShell to remove unnecessary bloatware from Windows installations. This tool helps in optimizing system performance by removing unwanted applications and services.</p>
+            <p class="project-url"><a href="https://github.com/tyroruyk/dewin" target="_blank">View Project</a></p>
+        </div>
+
+        <h2 id="experience">Experience</h2>
+
+        <div class="item">
+            <p class="institution">Chief Executive Officer, Neune Labs</p>
+            <p class="date">(December 2023 - Present)</p>
+            <p>Leading research and development of AI architectures for natural language processing applications. Designed and implemented scalable systems for Bengali language processing that improved computational efficiency while maintaining accuracy.</p>
+            <p>Research areas:</p>
             <ul>
-                <!-- <li>
-                    <a href="https://www.example.com" target="_blank">
-                        <div class="social-box">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                    </a>
-                </li> -->
-                <li>
-                    <a href="https://twitter.com/tyroruyk" target="_blank">
-                        <div class="social-box">
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:avishek_dutta@icloud.com">
-                        <div class="social-box">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/duttavishek" target="_blank">
-                        <div class="social-box">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/tyroruyk/" target="_blank">
-                        <div class="social-box">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                    </a>
-                </li>
+                <li>System architecture for AI-driven applications</li>
+                <li>Optimization techniques for low-resource processing</li>
+                <li>Distributed computing systems for AI applications</li>
             </ul>
         </div>
-        <!-- <button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button> -->
+
+        <div class="item">
+            <p class="institution">Executive Designer, Mind Splash Magazine</p>
+            <p class="date">(November 2021 - March 2022)</p>
+            <p>Did graphic design projects, creating visually compelling layouts and illustrations for various articles and features. Enhanced the magazine's visual appeal and reader engagement through innovative design solutions.</p>
+        </div>
+
+        <h2 id="volunteering">Volunteering</h2>
+
+        <div class="item">
+            <p class="institution">Contributing Writer, Banger Chatar Biggan</p>
+            <p class="date">(2022 - Present)</p>
+            <p>Authored modern science articles focusing on explaining complex topics for general people. Engaged readers with in-depth analysis and accessible explanations of complex scientific concepts.</p>
+        </div>
+
+        <div class="item">
+            <p class="institution">Training & Development Executive, FGPHS ICT Club</p>
+            <p class="date">(2020 - 2022)</p>
+            <p>Organized and conducted training sessions on various ICT topics, including programming, web development, and cybersecurity. Mentored students and helped them develop their technical skills through hands-on projects and workshops.</p>
+        </div>
+
+        <h2 id="certifications">Licenses and Certifications</h2>
+
+        <div class="item">
+            <p class="institution">Open Researcher and Contribution ID - ORCID</p>
+            <p class="date">Issued Feb 2024</p>
+            <p>Credential ID: <span class="grade">0000-0002-8328-8649</span></p>
+        </div>
+
+        <div class="item">
+            <p class="institution">Ready Player 50 - CS50</p>
+            <p class="date">Issued Oct 2023</p>
+            <p>Credential ID: <span class="grade">bb77190a-dfdd-4884-9ecf-b5eef9ec1de9</span></p>
+        </div>
+
+        <p class="last-updated">Last Updated: 20th March 2025</p>
+
+        <a href="#" class="download-btn" id="downloadBtn">
+            <i class="fas fa-download"></i>
+        </a>
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/31103ed6e9.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.print();
+        });
+    </script>
 </body>
+
 </html>
