@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Last updated message at the bottom -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,6 +53,11 @@
             font-weight: normal;
             border-bottom: 1px solid #b3b3b3;
             padding-bottom: 5px;
+        }
+
+        p {
+            break-inside: avoid; /* Keep items together */
+            page-break-inside: avoid; /* Avoid page breaks inside items */
         }
 
         .item {
@@ -202,200 +205,179 @@
             <p>My academic journey has been marked by a commitment to excellence and a drive to push the boundaries of what is possible with technology. I have developed a range of projects that demonstrate my ability to apply theoretical knowledge to practical problems, particularly in the areas of natural language processing and system optimization. I am eager to continue my education and research in a challenging and dynamic environment where I can contribute to the advancement of technology and innovation.</p>
         </div>
 
-        <h2 id="education">Education</h2>
-
-        <div class="item">
-            <p class="institution">Higher Secondary, Cantonment College, Cumilla Cantonment</p>
-            <p class="date">(2023 - 2024)</p>
-            <p class="grade">Grade: GPA 5.00/5.00 (Science)</p>
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <p class="institution">Higher Secondary, Cantonment College, Cumilla Cantonment</p>
+                <p class="date">(2023 - 2024)</p>
+                <p class="grade">Grade: GPA 5.00/5.00 (Science)</p>
+            </div>
+            <div class="item">
+                <p class="institution">Secondary, Feni Government Pilot High School, Feni</p>
+                <p class="date">(2017 - 2022)</p>
+                <p class="grade">Grade: GPA 5.00/5.00 (Science)</p>
+            </div>
         </div>
 
-        <div class="item">
-            <p class="institution">Secondary, Feni Government Pilot High School, Feni</p>
-            <p class="date">(2017 - 2022)</p>
-            <p class="grade">Grade: GPA 5.00/5.00 (Science)</p>
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="item">
+                <p class="institution">Chief Executive Officer, Neune Labs</p>
+                <p class="date">(December 2023 - Present)</p>
+                <p>Leading research and development of AI architectures for natural language processing applications. Designed and implemented scalable systems for Bengali language processing that improved computational efficiency while maintaining accuracy.</p>
+                <p>Research areas:</p>
+                <ul>
+                    <li>System architecture for AI-driven applications</li>
+                    <li>Optimization techniques for low-resource processing</li>
+                    <li>Distributed computing systems for AI applications</li>
+                </ul>
+            </div>
+            <div class="item">
+                <p class="institution">Executive Designer, Mind Splash Magazine</p>
+                <p class="date">(November 2021 - March 2022)</p>
+                <p>Did graphic design projects, creating visually compelling layouts and illustrations for various articles and features. Enhanced the magazine's visual appeal and reader engagement through innovative design solutions.</p>
+            </div>
         </div>
 
-        <h2 id="experience">Experience</h2>
-
-        <div class="item">
-            <p class="institution">Chief Executive Officer, Neune Labs</p>
-            <p class="date">(December 2023 - Present)</p>
-            <p>Leading research and development of AI architectures for natural language processing applications. Designed and implemented scalable systems for Bengali language processing that improved computational efficiency while maintaining accuracy.</p>
-            <p>Research areas:</p>
-            <ul>
-                <li>System architecture for AI-driven applications</li>
-                <li>Optimization techniques for low-resource processing</li>
-                <li>Distributed computing systems for AI applications</li>
-            </ul>
+        <div class="section" id="certifications">
+            <h2>Licenses and Certifications</h2>
+            <div class="item">
+                <p class="institution">Open Researcher and Contribution ID - ORCID</p>
+                <p class="date">Issued Feb 2024</p>
+                <p>Credential ID: <span class="grade"><a href="https://orcid.org/0000-0002-8328-8649" target="_blank">0000-0002-8328-8649</a></span></p>
+            </div>
+            <div class="item">
+                <p class="institution">Ready Player 50 - CS50, Harvard University</p>
+                <p class="date">Issued Oct 2023</p>
+                <p>Credential ID: <span class="grade"><a href="https://cs50.harvard.edu/certificates/bb77190a-dfdd-4884-9ecf-b5eef9ec1de9" target="_blank">bb77190a-dfdd-4884-9ecf-b5eef9ec1de9</a></span></p>
+            </div>
         </div>
 
-        <div class="item">
-            <p class="institution">Executive Designer, Mind Splash Magazine</p>
-            <p class="date">(November 2021 - March 2022)</p>
-            <p>Did graphic design projects, creating visually compelling layouts and illustrations for various articles and features. Enhanced the magazine's visual appeal and reader engagement through innovative design solutions.</p>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="item">
+                <p class="institution">KothonAI: Bengali Generative AI Tool</p>
+                <p>Developed a novel architecture for Bengali language processing that addresses challenges specific to morphologically rich languages. It's now regularly used by the general students of Bangladesh.</p>
+                <p class="project-url"><a href="https://ai.pathgriho.com/" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">RoktoJog - E2E Blood Donation System</p>
+                <p>Developed an end-to-end blood donation system to streamline the process of blood donation and management. This system includes features for donor registration, blood inventory management, and scheduling of donation appointments.</p>
+                <p class="project-url"><a href="http://roktojog.org/" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">Everyday One Taka Fund - A Micro Donation Platform</p>
+                <p>Developed and designed the member management system to streamline user management and improve user experience.</p>
+                <p class="project-url"><a href="https://everyday1takafund.com/" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">XCalc - A Simple CLI Calculator</p>
+                <p>Created a simple command-line interface calculator using Rust and Bash. This tool supports basic arithmetic operations and serves as a practical example of CLI application development.</p>
+                <p class="project-url"><a href="https://github.com/tyroruyk/xcalc" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">Basic System Kernel (BSK)</p>
+                <p>Developed a basic system kernel using Assembly and C to demonstrate fundamental operating system concepts. This project provides insights into low-level programming and system architecture.</p>
+                <p class="project-url"><a href="https://gitlab.com/tyroruyk/bsk" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">Ufetch - A System Fetch Tool</p>
+                <p>Created a system fetch tool using Rust and Bash to display system information. This tool provides detailed information about the system's hardware and software configuration in a user-friendly format.</p>
+                <p class="project-url"><a href="https://github.com/tyroruyk/ufetch" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">BDIX Server Checker</p>
+                <p>Developed a server checker tool using Python and JavaScript to monitor BDIX servers. This tool helps in ensuring the availability and performance of BDIX servers by providing real-time status updates and alerts.</p>
+                <p class="project-url"><a href="https://github.com/tyroruyk/bdix" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">PAPT - Post APT Tool</p>
+                <p>Created a post-APT tool using Bash to automate post-installation tasks. This tool simplifies the process of setting up a new system by automating common configuration and installation steps.</p>
+                <p class="project-url"><a href="https://github.com/tyroruyk/papt" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">Triplex - A Simple CLI Puzzle Game</p>
+                <p>Developed a simple command-line interface puzzle game using C++. This game challenges players with various puzzles and serves as an example of game development using C++.</p>
+                <p class="project-url"><a href="https://github.com/tyroruyk/triplex" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">DeWin - Windows Debloating Utility</p>
+                <p>Created a Windows debloating utility using PowerShell to remove unnecessary bloatware from Windows installations. This tool helps in optimizing system performance by removing unwanted applications and services.</p>
+                <p class="project-url"><a href="https://github.com/tyroruyk/dewin" target="_blank">View Project</a></p>
+            </div>
+            <div class="item">
+                <p class="institution">Conky Theme - A Modern & Flat Conky Theme</p>
+                <p>Designed a modern and flat theme for Conky, a system monitor for X. This theme provides a clean and minimalistic interface for displaying system information.</p>
+                <p class="project-url"><a href="https://gitlab.com/tyroruyk/conky-theme" target="_blank">View Project</a></p>
+            </div>
         </div>
 
-        <h2 id="certifications">Licenses and Certifications</h2>
-
-        <div class="item">
-            <p class="institution">Open Researcher and Contribution ID - ORCID</p>
-            <p class="date">Issued Feb 2024</p>
-            <p>Credential ID: <span class="grade"><a href="https://orcid.org/0000-0002-8328-8649" target="_blank">0000-0002-8328-8649</a></span></p>
+        <div class="section" id="volunteering">
+            <h2>Volunteering</h2>
+            <div class="item">
+                <p class="institution">Contributing Writer, Banger Chatar Biggan</p>
+                <p class="date">(2022 - Present)</p>
+                <p>Authored modern science articles focusing on explaining complex topics for general people. Engaged readers with in-depth analysis and accessible explanations of complex scientific concepts.</p>
+            </div>
+            <div class="item">
+                <p class="institution">Training & Development Executive, FGPHS ICT Club</p>
+                <p class="date">(2020 - 2022)</p>
+                <p>Organized and conducted training sessions on various ICT topics, including programming, web development, and cybersecurity. Mentored students and helped them develop their technical skills through hands-on projects and workshops.</p>
+            </div>
         </div>
 
-        <div class="item">
-            <p class="institution">Ready Player 50 - CS50, Harvard University</p>
-            <p class="date">Issued Oct 2023</p>
-            <p>Credential ID: <span class="grade"><a href="https://cs50.harvard.edu/certificates/bb77190a-dfdd-4884-9ecf-b5eef9ec1de9" target="_blank">bb77190a-dfdd-4884-9ecf-b5eef9ec1de9</a></span></p>
+        <div class="section" id="skills">
+            <h2>Technical Skills & Toolset</h2>
+            <div class="item">
+                <p class="institution">Programming & Development</p>
+                <p>Python, C/C++, Rust, Java, MATLAB, JavaScript, Bash</p>
+            </div>
+            <div class="item">
+                <p class="institution">AI & Data Science</p>
+                <p>TensorFlow, PyTorch, Scikit-Learn, Pandas, OpenCV, Langchain</p>
+            </div>
+            <div class="item">
+                <p class="institution">Scientific Writing & Visualization</p>
+                <p>LaTeX, Overleaf, MATLAB, Matplotlib</p>
+            </div>
+            <div class="item">
+                <p class="institution">Design & Prototyping</p>
+                <p>Adobe Illustrator, Figma, Blender, SolidWorks</p>
+            </div>
+            <div class="item">
+                <p class="institution">Others</p>
+                <p>Visual Studio, Linux, Git, Vim, Cloudflare, Windows</p>
+            </div>
         </div>
 
-        <h2 id="projects">Projects</h2>
-
-        <div class="item">
-            <p class="institution">KothonAI: Bengali Generative AI Tool</p>
-            <p>Developed a novel architecture for Bengali language processing that addresses challenges specific to morphologically rich languages. It's now regularly used by the general students of Bangladesh.</p>
-            <p class="project-url"><a href="https://ai.pathgriho.com/" target="_blank">View Project</a></p>
+        <div class="section" id="interests">
+            <h2>Interests & Activities</h2>
+            <div class="item">
+                <p class="institution">Scientific Research & Writing</p>
+                <p>Engaging in research and contributing to advancements in AI, quantum computing, and robotics. Served as a beta reader for the mathematically rigorous book "Cha Coffee and General Relativity" on general relativity.</p>
+            </div>
+            <div class="item">
+                <p class="institution">Graphic Design & Data Visualization</p>
+                <p>Creating technical illustrations, infographics, and presentations for academic and professional projects.</p>
+            </div>
+            <div class="item">
+                <p class="institution">Technical Reading</p>
+                <p>Engaging with research papers, scientific journals, and advanced textbooks on AI, machine learning, and computational sciences.</p>
+            </div>
+            <div class="item">
+                <p class="institution">Nature Photography</p>
+                <p>Capturing landscapes, wildlife, and environmental changes to document the beauty and science of nature.</p>
+            </div>
+            <div class="item">
+                <p class="institution">Music & Cognitive Science</p>
+                <p>Exploring the intersection of music and neuroscience, focusing on its impact on learning and creativity. I love to listen and play classical music, and I play instruments such as the harmonium, tabla, and guitar.</p>
+            </div>
+            <div class="item">
+                <p class="institution">Games & Sports</p>
+                <p>Enjoy playing video games, as well as chess and football. These activities help in developing strategic thinking, teamwork, and physical fitness.</p>
+            </div>
         </div>
 
-        <div class="item">
-            <p class="institution">RoktoJog - E2E Blood Donation System</p>
-            <p>Developed an end-to-end blood donation system to streamline the process of blood donation and management. This system includes features for donor registration, blood inventory management, and scheduling of donation appointments.</p>
-            <p class="project-url"><a href="http://roktojog.org/" target="_blank">View Project</a>
-            </p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Everyday One Taka Fund - A Micro Donation Platform</p>
-            <p>Developed and designed the member management system to streamline user management and improve user experience.</p>
-            <p class="project-url"><a href="https://everyday1takafund.com/" target="_blank">View Project</a>
-            </p>
-        </div>
-
-        <div class="item">
-            <p class="institution">XCalc - A Simple CLI Calculator</p>
-            <p>Created a simple command-line interface calculator using Rust and Bash. This tool supports basic arithmetic operations and serves as a practical example of CLI application development.</p>
-            <p class="project-url"><a href="https://github.com/tyroruyk/xcalc" target="_blank">View Project</a></p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Basic System Kernel (BSK)</p>
-            <p>Developed a basic system kernel using Assembly and C to demonstrate fundamental operating system concepts. This project provides insights into low-level programming and system architecture.</p>
-            <p class="project-url"><a href="https://gitlab.com/tyroruyk/bsk" target="_blank">View Project</a></p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Ufetch - A System Fetch Tool</p>
-            <p>Created a system fetch tool using Rust and Bash to display system information. This tool provides detailed information about the system's hardware and software configuration in a user-friendly format.
-            </p>
-            <p class="project-url"><a href="https://github.com/tyroruyk/ufetch" target="_blank">View Project</a></p>
-        </div>
-
-        <div class="item">
-            <p class="institution">BDIX Server Checker</p>
-            <p>Developed a server checker tool using Python and JavaScript to monitor BDIX servers. This tool helps in ensuring the availability and performance of BDIX servers by providing real-time status updates and alerts.</p>
-            <p class="project-url"><a href="https://github.com/tyroruyk/bdix" target="_blank">View Project</a></p>
-        </div>
-
-        <div class="item">
-            <p class="institution">PAPT - Post APT Tool</p>
-            <p>Created a post-APT tool using Bash to automate post-installation tasks. This tool simplifies the process
-                of setting up a new system by automating common configuration and installation steps.</p>
-            <p class="project-url"><a href="https://github.com/tyroruyk/papt" target="_blank">View Project</a></p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Triplex - A Simple CLI Puzzle Game</p>
-            <p>Developed a simple command-line interface puzzle game using C++. This game challenges players with various puzzles and serves as an example of game development using C++.</p>
-            <p class="project-url"><a href="https://github.com/tyroruyk/triplex" target="_blank">View Project</a>
-            </p>
-        </div>
-
-        <div class="item">
-            <p class="institution">DeWin - Windows Debloating Utility</p>
-            <p>Created a Windows debloating utility using PowerShell to remove unnecessary bloatware from Windows installations. This tool helps in optimizing system performance by removing unwanted applications and services.</p>
-            <p class="project-url"><a href="https://github.com/tyroruyk/dewin" target="_blank">View Project</a></p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Conky Theme - A Modern & Flat Conky Theme</p>
-            <p>Designed a modern and flat theme for Conky, a system monitor for X. This theme provides a clean and minimalistic interface for displaying system information.</p>
-            <p class="project-url"><a href="https://gitlab.com/tyroruyk/conky-theme" target="_blank">View Project</a></p>
-        </div>
-
-        <h2 id="volunteering">Volunteering</h2>
-
-        <div class="item">
-            <p class="institution">Contributing Writer, Banger Chatar Biggan</p>
-            <p class="date">(2022 - Present)</p>
-            <p>Authored modern science articles focusing on explaining complex topics for general people. Engaged readers with in-depth analysis and accessible explanations of complex scientific concepts.</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Training & Development Executive, FGPHS ICT Club</p>
-            <p class="date">(2020 - 2022)</p>
-            <p>Organized and conducted training sessions on various ICT topics, including programming, web development, and cybersecurity. Mentored students and helped them develop their technical skills through hands-on projects and workshops.</p>
-        </div>
-
-        <h2 id="skills">Technical Skills & Toolset</h2>
-        
-        <div class="item">
-            <p class="institution">Programming & Development</p>
-            <p>Python, C/C++, Rust, Java, MATLAB, JavaScript, Bash</p>
-        </div>
-        
-        <div class="item">
-            <p class="institution">AI & Data Science</p>
-            <p>TensorFlow, PyTorch, Scikit-Learn, Pandas, OpenCV, Langchain</p>
-        </div>
-        
-        <div class="item">
-            <p class="institution">Scientific Writing & Visualization</p>
-            <p>LaTeX, Overleaf, MATLAB, Matplotlib</p>
-        </div>
-        
-        <div class="item">
-            <p class="institution">Design & Prototyping</p>
-            <p>Adobe Illustrator, Figma, Blender, SolidWorks</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Others</p>
-            <p>Visual Studio, Linux, Git, Vim, Cloudflare, Windows</p>
-        </div>
-        
-        <h2 id="interests">Interests & Activities</h2>
-
-        <div class="item">
-            <p class="institution">Scientific Research & Writing</p>
-            <p>Engaging in research and contributing to advancements in AI, quantum computing, and robotics. Served as a beta reader for the mathematically rigorous book "Cha Coffee and General Relativity" on general relativity.</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Graphic Design & Data Visualization</p>
-            <p>Creating technical illustrations, infographics, and presentations for academic and professional projects.</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Technical Reading</p>
-            <p>Engaging with research papers, scientific journals, and advanced textbooks on AI, machine learning, and computational sciences.</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Nature Photography</p>
-            <p>Capturing landscapes, wildlife, and environmental changes to document the beauty and science of nature.</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Music & Cognitive Science</p>
-            <p>Exploring the intersection of music and neuroscience, focusing on its impact on learning and creativity. I love to listen and play classical music, and I play instruments such as the harmonium, tabla, and guitar.</p>
-        </div>
-
-        <div class="item">
-            <p class="institution">Games & Sports</p>
-            <p>Enjoy playing video games, as well as chess and football. These activities help in developing strategic thinking, teamwork, and physical fitness.</p>
-        </div>
-        
         <p class="last-updated">Last Updated: 25th March 2025</p>
 
         <a href="#" class="download-btn" id="downloadBtn">
@@ -407,13 +389,32 @@
     <script>
         document.getElementById('downloadBtn').addEventListener('click', function (e) {
             e.preventDefault();
+
+            // Select elements to hide
+            const nav = document.querySelector('nav');
+            const downloadBtn = document.querySelector('.download-btn');
+
+            // Store original display styles
+            const navDisplay = nav.style.display;
+            const btnDisplay = downloadBtn.style.display;
+
+            // Hide elements
+            nav.style.display = 'none';
+            downloadBtn.style.display = 'none';
+
             const element = document.querySelector('.container');
+
+            // Generate PDF
             html2pdf(element, {
                 margin: 1,
                 filename: 'Avishek Dutta - Curriculum Vitae.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            }).then(() => {
+                // Restore original display styles after PDF generation
+                nav.style.display = navDisplay;
+                downloadBtn.style.display = btnDisplay;
             });
         });
     </script>
