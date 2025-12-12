@@ -1,2 +1,16 @@
 @import "tailwindcss";
 
+:root {
+    background: #020618;
+}
+
+.hero-bg {
+    position: relative;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.04) 0%, rgba(15, 23, 42, 0.92) 45%, rgba(2, 6, 23, 1) 100%);
+}
+
+.profile-frame {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(2, 6, 23, 0.7), 0 8px 20px rgba(2, 6, 23, 0.6);
+}
