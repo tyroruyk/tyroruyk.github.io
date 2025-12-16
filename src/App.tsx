@@ -252,7 +252,7 @@ const App = () => {
       {/* Footer */}
       <div className="border-t border-slate-700 py-6">
         <div className="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} {profile.name}.
+          &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
         </div>
       </div>
     </div>
