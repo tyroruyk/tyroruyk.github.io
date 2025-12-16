@@ -1,5 +1,25 @@
 export const projects = [
   {
+    name: 'NSU CEC Website & Management System',
+    desc: 'Official website and management system for North South University Computer and Engineering Club (NSU CEC). Features event management, member registration, and also role-based access control for admins and members.',
+    url: 'https://nsucec.com/',
+  },
+  {
+    name: 'CYBER PONG',
+    desc: 'A futuristic browser-based Pong game featuring power-ups, particle effects, and fast-paced arcade gameplay. Fully playable with mouse or touch controls.',
+    url: 'https://tyroruyk.github.io/pong',
+  },
+  {
+    name: 'NSU Sobers Website',
+    desc: 'Official website for NSU Sobers, the Mars Rover team of North South University. Showcasing our team as we prepare for international competitions. Also, showcasing probable rover design in 3D and technical details.',
+    url: 'https://nsu-sobers.pages.dev/',
+  },
+  {
+    name: 'NSU CEC GAMEWAVE 2.0 Platform',
+    desc: 'A full-stack event platform built independently for NSU CEC GAMEWAVE 2.0, including frontend, backend, registration system, admin panel, and DevOps. Designed to handle high traffic with a seamless experience for participants and organizers.',
+    url: 'https://gamewave.nsucec.com/',
+  },
+  {
     name: 'NSU CGPA Calculator',
     desc: 'A user-friendly CGPA calculator built specifically for North South University students. Track semester-wise progress and calculate cumulative GPA with accuracy.',
     url: 'https://tyroruyk.github.io/nsu-cgpa',

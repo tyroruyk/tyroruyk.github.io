@@ -130,6 +130,12 @@ const App = () => {
                     <div className="flex items-baseline gap-4 mb-4">
                       <h2 className="text-2xl font-light text-blue-400">{inst.institution}</h2>
                       {/* <span className="text-blue-400">{inst.entries[0]?.title}</span> */}
+                      {inst.link && (
+                        <a href={inst.link} target="_blank" rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-blue-400 text-sm inline-flex items-center gap-1">
+                          <ExternalLink size={14} />
+                        </a>
+                      )}
                     </div>
 
                     {inst.entries.map((e, idx) => (
@@ -246,7 +252,7 @@ const App = () => {
       {/* Footer */}
       <div className="border-t border-slate-700 py-6">
         <div className="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} {profile.title}.
+          &copy; {new Date().getFullYear()} {profile.name}.
         </div>
       </div>
     </div>

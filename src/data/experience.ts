@@ -8,12 +8,14 @@ export type ExperienceEntry = {
 
 export type Institution = {
   institution: string;
+  link?: string;
   entries: ExperienceEntry[];
 };
 
 export const experience: Institution[] = [
   {
     institution: 'NSU Computer & Engineering Club',
+    link: 'https://nsucec.com/',
     entries: [
       {
         title: 'In-Charge',
@@ -33,6 +35,7 @@ export const experience: Institution[] = [
   },
   {
     institution: 'CSE4ALL',
+    link: 'https://cse4all.org/',
     entries: [
       {
         title: 'Platform Manager',
@@ -45,9 +48,10 @@ export const experience: Institution[] = [
   },
   {
     institution: 'Neune Labs',
+    link: 'https://neunelabs.com/',
     entries: [
       {
-        title: 'Director',
+        title: 'Director & Chief System Architect',
         start: 'December 2023',
         end: 'Present',
         description:
