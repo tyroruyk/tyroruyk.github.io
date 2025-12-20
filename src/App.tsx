@@ -1,5 +1,5 @@
 import { ExternalLink, Facebook, Github, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { certifications, education, volunteering } from './data/education';
 import { experience } from './data/experience';
@@ -10,7 +10,12 @@ import { skills } from './data/skills';
 import { socialLinks } from './data/social';
 
 const App = () => {
+  const tabs = useMemo<string[]>(
+    () => ['experience', 'education', 'projects', 'skills', 'interests'],
+    []
+  );
   const [activeTab, setActiveTab] = useState('experience');
+  const navRef = useRef<HTMLDivElement | null>(null);
   const navActive = true;
 
   const iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement> & { size?: number }>> = {
@@ -19,6 +24,41 @@ const App = () => {
     Github,
     Twitter,
     Facebook,
+  };
+
+  useEffect(() => {
+    // initialize from URL hash if present and valid
+    try {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && tabs.includes(hash)) {
+        setActiveTab(hash);
+        // if arriving with a hash on initial load, scroll nav into view
+        requestAnimationFrame(() => navRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      } else if (!hash) {
+        // ensure a default hash exists without creating history entry
+        history.replaceState(null, '', `#${activeTab}`);
+      }
+    } catch {
+      // ignore if window isn't available
+    }
+
+    const onHashChange = () => {
+      const newHash = window.location.hash.replace('#', '');
+      if (newHash && tabs.includes(newHash)) {
+        setActiveTab(newHash);
+        requestAnimationFrame(() => navRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      }
+    };
+
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, [activeTab, tabs]);
+
+  const handleSetTab = (tab: string) => {
+    if (!tabs.includes(tab)) return;
+    // update URL hash which will also trigger hashchange and update state
+    // eslint-disable-next-line react-hooks/immutability
+    window.location.hash = tab;
   };
 
   return (
@@ -99,13 +139,13 @@ const App = () => {
       {navActive && (
         <div>
           {/* Navigation Tabs */}
-          <div className="border-b border-slate-700 sticky top-0 bg-slate-950 z-10">
+          <div ref={navRef} className="border-b border-slate-700 sticky top-0 bg-slate-950 z-10">
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex gap-1 overflow-x-auto">
-                {['experience', 'education', 'projects', 'skills', 'interests'].map((tab) => (
+                {tabs.map((tab) => (
                   <button
                     key={tab}
-                    onClick={() => setActiveTab(tab)}
+                    onClick={() => handleSetTab(tab)}
                     className={`px-6 py-4 text-sm uppercase tracking-wide transition-colors whitespace-nowrap hover:cursor-pointer ${
                       activeTab === tab
                         ? 'text-blue-400 border-b-2 border-blue-400'
@@ -185,13 +225,16 @@ const App = () => {
                             View Credential <ExternalLink size={14} />
                           </a>
                         )}
+                        {c.credential && (
+                          <p className="text-gray-300 mt-1">Credential ID: {c.credential}</p>
+                        )}
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="border-t border-slate-700 pt-10">
-                  <h3 className="text-xl font-light text-white mb-6">Volunteering</h3>
+                  <h3 className="text-xl font-light text-white mb-6">Volunteering & Organizations</h3>
                   <div className="space-y-6">
                     {volunteering.map((v, i) => (
                       <div key={i}>

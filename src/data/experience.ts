@@ -51,7 +51,7 @@ export const experience: Institution[] = [
     link: 'https://neunelabs.com/',
     entries: [
       {
-        title: 'Director & Chief System Architect',
+        title: 'Founder & Managing Director',
         start: 'December 2023',
         end: 'Present',
         description:

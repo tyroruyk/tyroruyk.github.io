@@ -20,6 +20,24 @@ export const education = [
 
 export const certifications = [
   {
+    name: 'IEEE Student Member',
+    issuer: 'IEEE',
+    date: 'Oct 2024',
+    credential: '101425164',
+  },
+  {
+    name: 'Certificate of Appreciation - 3rd National ICT Scout Jamboree',
+    issuer: 'Bangladesh Scouts',
+    date: 'Sep 2024',
+    credential: 'TCS0597/3',
+  },
+  {
+    name: 'AI Prompt Engineer Level 1™',
+    issuer: 'AI CERTs®',
+    date: 'Jul 2025 - Jul 2026',
+    url: 'https://verify.certs365.io/?=28a3e8cde967',
+  },
+  {
     name: 'Open Researcher and Contribution ID',
     issuer: 'ORCID',
     date: 'Feb 2024',
