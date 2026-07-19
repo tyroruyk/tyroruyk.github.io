@@ -1,8 +1,22 @@
 export const skills = [
-  { category: 'Programming Languages', items: ['Python', 'C', 'C++', 'Rust', 'Java', 'JavaScript', 'Bash', 'PowerShell', 'Assembly'] },
-  { category: 'AI & Machine Learning', items: ['Pandas', 'OpenCV', 'LangChain', 'Prompt Engineering'] },
-  { category: 'Web Development', items: ['Flask', 'Node.js', 'REST APIs', 'SQL', 'PostgreSQL', 'Git', 'Linux', 'Windows'] },
-  { category: 'Systems & Tools', items: ['Operating Systems', 'Systems Programming', 'Software Testing', 'Scripting', 'Interpreter Development'] },
-  { category: 'Design & Visualization', items: ['Adobe Illustrator', 'Figma', 'Blender', 'SolidWorks', 'UI Design', 'Data Visualization', 'LaTeX', 'Overleaf', 'Matplotlib'] },
-  { category: 'Additional Skills', items: ['Project Management', 'Platform Management', 'Teamwork', 'Training & Development', 'Communication', 'Research', 'Writing'] },
+  {
+    category: 'Programming Languages',
+    items: ['Python', 'TypeScript', 'C/C++', 'Java', 'Rust', 'Bash', 'PowerShell', 'SQL', 'Assembly'],
+  },
+  {
+    category: 'Frameworks & Libraries',
+    items: ['React', 'Next.js', 'Express.js', 'FastAPI', 'Flask', 'Node.js', 'LangChain', 'Tailwind CSS', 'React Native', 'NumPy', 'Pandas', 'Scikit-learn', 'Seaborn', 'Keras'],
+  },
+  {
+    category: 'Databases & Infrastructure',
+    items: ['PostgreSQL', 'REST APIs', 'JWT', 'Google OAuth', 'CI/CD', 'Docker', 'Cloud Deployment'],
+  },
+  {
+    category: 'Security',
+    items: ['CSRF Protection', 'Input Sanitization', 'Rate Limiting', 'Password Hashing', 'System Design', 'Secure Authentication'],
+  },
+  {
+    category: 'Tools & Platforms',
+    items: ['Git/GitHub', 'LaTeX', 'Linux', 'Figma', 'Adobe Illustrator'],
+  },
 ];
