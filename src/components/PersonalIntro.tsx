@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, MapPin, Mail, Phone, MessageCircle, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, MapPin, Mail, MessageCircle, ArrowRight } from 'lucide-react';
 import { profile } from '../data/profile';
 import Reveal from './Reveal';
 

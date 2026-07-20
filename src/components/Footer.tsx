@@ -1,15 +1,7 @@
-import { ArrowUp, Instagram, Facebook } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ArrowUp } from 'lucide-react';
 import { profile } from '../data/profile';
-import { socialLinks } from '../data/social';
-
-const minorIcons: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement> & { size?: number }>> = {
-  Instagram, Facebook,
-};
 
 const Footer = () => {
-  const minorLinks = socialLinks.filter((s) => !s.major);
-
   return (
     <footer className="border-t border-border-subtle py-8">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">

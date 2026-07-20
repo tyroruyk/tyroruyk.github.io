@@ -9,11 +9,6 @@ interface Ball {
   trail: { x: number; y: number }[];
 }
 
-interface TrailPoint {
-  x: number;
-  y: number;
-}
-
 class Particle {
   x: number;
   y: number;

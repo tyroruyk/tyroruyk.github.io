@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { skills } from '../data/skills';
 import Reveal from './Reveal';
 

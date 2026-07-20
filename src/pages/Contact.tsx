@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
-import { Mail, MapPin, Phone, MessageCircle, ExternalLink, Github, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Mail, MapPin, MessageCircle, ExternalLink, Github, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
 import { socialLinks } from '../data/social';
 import { profile } from '../data/profile';
 import Reveal from '../components/Reveal';
