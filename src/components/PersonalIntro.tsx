@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, MapPin, Mail, MessageCircle, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, MapPin, Mail, ArrowRight } from 'lucide-react';
 import { profile } from '../data/profile';
 import Reveal from './Reveal';
 
@@ -60,12 +60,13 @@ const PersonalIntro = () => (
               Explore Projects
               <ArrowRight size={16} />
             </Link>
+            {/* CV */}
             <Link
-              to="/contact"
+              to="/cv"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-card-bg border border-border-subtle text-sm text-zinc-400 hover:border-accent hover:text-accent hover:bg-accent/5 transition-colors card-hover"
             >
-              Contact Me
-              <MessageCircle size={16} />
+              View CV
+              <ArrowRight size={16} />
             </Link>
           </div>
         </Reveal>

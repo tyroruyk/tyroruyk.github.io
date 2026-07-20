@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     name: 'RoktoJog',
     desc: 'Designed system architecture for an end-to-end blood donation platform encompassing donor registration, blood inventory tracking, appointment scheduling, and emergency request handling with secure authentication.',
-    url: 'http://roktojog.org/',
+    url: '#',
     featured: true,
   },
   {

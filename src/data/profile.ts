@@ -1,14 +1,13 @@
 export const profile = {
   name: 'Avishek Dutta',
-  title: 'Researcher | AI Enthusiast | Computer Science Student',
-  location: 'Dhaka, Bangladesh',
+  title: 'Computer Science Student | AI/ML & Automation | Full Stack Developer',
+  location: 'Dhaka, Bangladesh', 
   email: 'contact.avishekdutta@gmail.com',
   academicEmail: 'avishek.dutta.252@northsouth.edu',
   phone: '+880 1410-396100',
   image: '/profile.jpg',
-  headline: 'I build digital experiences that scale.',
-  subheadline: 'Full-stack developer & AI researcher specializing in NLP for low-resource languages, biomedical ML, and scalable platform architecture.',
-  bio: `I am a vibrant and curiosity-driven learner who enjoys exploring the deeper foundations of computer science while applying that knowledge to build practical, impactful systems. My experience spans natural language processing, distributed architectures, and system optimization, where I have led projects, collaborated across teams, and delivered tools actively used by students and organizations. Alongside my technical journey, I remain culturally engaged through music, which strengthens my creativity, discipline, and perspective. I strive to grow in environments that value research, engineering excellence, and well-rounded innovation.`,
+  subheadline: 'Building scalable web applications, automating complex workflows, and exploring applied AI for real-world impact.',
+  bio: `I am a vibrant, curiosity-driven Computer Science student at North South University who loves exploring the foundational concepts of computing while building practical, high-impact systems.  My journey spans AI/ML, full-stack software development, and institutional automation, from training machine learning models with high accuracy to deploying administrative workflow engines and web platforms actively used by thousands of students. Alongside these, I stay culturally engaged through music, which sharpens my creativity, discipline, and overall perspective. I thrive in environments that value research, engineering excellence, and well-rounded innovation.`,
   researchInterests: [
     'Applied AI and machine learning',
     'NLP for low-resource languages (Bengali)',
