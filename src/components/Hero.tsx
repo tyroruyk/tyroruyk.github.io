@@ -53,7 +53,7 @@ const Hero = () => {
             variants={item}
             className="text-base text-zinc-400 leading-relaxed max-w-xl mx-auto mb-10"
           >
-            Building practical, impactful systems at the intersection of AI, NLP, and distributed architectures.
+            Building practical, impactful systems at the intersection of AI, automation, and distributed architectures.
           </motion.p>
 
           <motion.div variants={item} className="flex items-center justify-center gap-4 flex-wrap">
