@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import {
-  SiPython, SiTypescript, SiNodedotjs, SiPostgresql, SiGit, SiLinux, SiFigma, SiKeras, SiLatex, SiHuggingface
+  SiPython, SiTypescript, SiNodedotjs, SiPostgresql, SiGit, SiLinux, SiFigma, SiKeras, SiLatex, SiHuggingface, SiRust
 } from 'react-icons/si';
 import Reveal from './Reveal';
 
@@ -16,6 +16,7 @@ const tools = [
   { icon: SiPostgresql, label: 'PostgreSQL' },
   { icon: SiKeras, label: 'Keras' },
   { icon: SiHuggingface, label: 'Hugging Face' },
+  { icon: SiRust, label: 'Rust' },
 ];
 
 const container: Variants = {

@@ -18,7 +18,7 @@ export const certifications = [
   },
   {
     name: 'IEEE Student Member',
-    issuer: 'IEEE',
+    issuer: 'Institute of Electrical and Electronics Engineers (IEEE)',
     date: 'Oct 2025',
     credential: '101425164',
   },

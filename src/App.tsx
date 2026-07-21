@@ -8,6 +8,7 @@ import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import Game from './pages/Game';
 import CV from './pages/CV';
+import Certifications from './pages/Certifications';
 import NotFound from './pages/NotFound';
 
 const ScrollToTop = () => {
@@ -42,6 +43,7 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/game" element={<Game />} />
         <Route path="/cv" element={<CV />} />
+        <Route path="/certifications" element={<Certifications />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
