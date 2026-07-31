@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, MapPin, Mail, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Instagram, MapPin, Mail, ArrowRight } from 'lucide-react';
 import { profile } from '../data/profile';
 import Reveal from './Reveal';
 
 const socials = [
   { icon: Github, href: 'https://github.com/tyroruyk', label: 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/duttavishek', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://x.com/ADuttaDG', label: 'Twitter' },
+  { icon: Instagram, href: 'https://instagram.com/avishekdutta.0', label: 'Instagram' },
 ];
 
 const PersonalIntro = () => (
